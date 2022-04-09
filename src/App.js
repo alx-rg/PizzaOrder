@@ -22,7 +22,6 @@ function App() {
         </h1>
         <form>
           <label>
-            Name:
             <input 
               value={name} 
               onChange={(e) => setName(e.target.value)}>
@@ -68,12 +67,12 @@ function App() {
         </Card>
 
       <Card>
-        <h3>Order</h3>
-        <h3>{name}</h3>
-        {peperoni && <p>Peperoni</p>}
-        {sausage && <p>Sausage</p>}
-        {peppers && <p>Peppers</p>}
-        {onions && <p>Onions</p>}
+        <h2>Your Order</h2>
+        <h4>{name}</h4>
+        {peperoni && <p className='toppings'>Peperoni</p>}
+        {sausage && <p className='toppings'>Sausage</p>}
+        {peppers && <p className='toppings'>Peppers</p>}
+        {onions && <p className='toppings'>Onions</p>}
       </Card>
     </div>
   );
